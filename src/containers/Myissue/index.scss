@@ -1,0 +1,155 @@
+/**
+ * Author：liushaozong
+ * Time：2017/8/10
+ * Description：enter scss
+ */
+
+@import "../../../libs/scss/normalize";
+@import "../../../libs/scss/public";
+@import "../../../libs/scss/rem";
+
+.enter{
+    position: relative;
+    width: rem(640);
+    height: auto;
+    background:#202020;
+    padding-bottom: rem(20);
+    .enter-box{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: rem(10);
+        box-sizing: border-box;
+        .back{
+            position: absolute;
+            top: rem(25);
+            img{
+                width: rem(30);
+                height: rem(30);
+            }
+        }
+        h5{
+            position: relative;
+            font-size: rem(20);
+            color: #fff;
+            text-align: center;
+            width: rem(180);
+            left:rem(220);
+            line-height: rem(60);
+            span{
+                position: absolute;
+                left: rem(15);
+                top: rem(20);
+                width: rem(30);
+                height: rem(21);
+                background: url("./img/title-bg.png") no-repeat;
+                background-size: 100%;
+            }
+        }
+        .myissue{
+            position: relative;
+            width: 100%;
+            border: 1px #2d2d2d solid;
+            border-radius: rem(4);
+            box-sizing: border-box;
+            padding-bottom: rem(10);
+            .query{
+                position: absolute;
+                right: rem(10);
+                width: rem(100);
+                height: rem(30);
+                top: rem(10);
+                line-height: rem(30);
+                background: #00a7dc;
+                border-radius: rem(4);
+                font-size: rem(16);
+                color: #fff;
+                text-align: center;
+                a{
+                    color: #fff;
+                }
+            }
+            .list-box{
+                width: 97%;
+                min-height: rem(200);
+                margin: 0 auto;
+                margin-top: rem(55);
+                padding: rem(10) rem(20);
+                border-radius: rem(4);
+                background: #474747;
+                .hint-text{
+                    position: relative;
+                    top: rem(80);
+                    font-size: rem(16);
+                    color: #fff;
+                    text-align: center;
+                }
+                .list{
+                    .state{
+                        display: none;
+                        position: relative;
+                        top: rem(20);
+                        left: rem(-10);
+                        width: rem(6);
+                        height: rem(6);
+                        border-radius: rem(6);
+                        background: #ff0000;
+                        &.active{
+                            display: block;
+                        }
+                    }
+                    p{
+                        position: relative;
+                        font-size: rem(16);
+                        color: #fff;
+                        border-bottom: 1px #595859 solid;
+                        height: rem(60);
+                        line-height: rem(30);
+                        a{
+                            display: block;
+                            height: rem(60);
+                            color: #fff;
+                            time{
+                                position: absolute;
+                                left: rem(5);
+                                bottom: rem(0);
+                                font-size: rem(14);
+                                color: #747174;
+                            }
+                            span{
+                                position: absolute;
+                                top: rem(3);
+                                height: rem(30);
+                                right: rem(-5);
+                                color: #959495;
+                                img{
+                                    width: rem(20);
+                                    height: rem(20);
+                                }
+                            }
+                            em{
+                                display: block;
+                                float: left;
+                                width: 82%;
+                                margin-left: rem(5);
+                                height: rem(45);
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                            }
+                            font{
+                                display: block;
+                                float: left;
+                                font-size: rem(16);
+                                color: #787778;
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+    }
+}

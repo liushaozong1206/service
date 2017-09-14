@@ -1,0 +1,247 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/10
+ * Description：enter scss
+ */
+
+@import "../../../libs/scss/normalize";
+@import "../../../libs/scss/public";
+@import "../../../libs/scss/rem";
+
+.enter{
+    position: relative;
+    width: rem(640);
+    height: auto;
+    background:#202020;
+    padding-bottom: rem(20);
+    .enter-box{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: rem(10);
+        box-sizing: border-box;
+        .back{
+            position: absolute;
+            top: rem(25);
+            img{
+                width: rem(30);
+                height: rem(30);
+            }
+        }
+        .title-h5{
+            position: relative;
+            font-size: rem(20);
+            color: #fff;
+            text-align: center;
+            width: rem(180);
+            left:rem(220);
+            line-height: rem(60);
+            span{
+                position: absolute;
+                left: rem(15);
+                top: rem(20);
+                width: rem(30);
+                height: rem(21);
+                background: url("./img/title-bg.png") no-repeat;
+                background-size: 100%;
+            }
+        }
+        .qa{
+            width: 100%;
+            height: auto;
+            border: 1px #2d2d2d solid;
+            border-radius: rem(4);
+            box-sizing: border-box;
+            .list-box-qa{
+                width: 97%;
+                margin: 1.5% auto;
+                padding: rem(40) rem(10);
+                border-radius: rem(4);
+                background: #474747;
+                .dialogue{
+                    .account{
+                        width: 100%;
+                        height: auto;
+                        margin-bottom: rem(10);
+                        .account-title{
+                            width: rem(80);
+                            height: rem(50);
+                            float: left;
+                            .title-img{
+                                img{
+                                    width: rem(20);
+                                    height: rem(20);
+                                }
+                            }
+                            .title-text{
+                                font-size: rem(14);
+                                color: #fff;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                        .account-cont{
+                            float: left;
+                            width: 82%;
+                            background: #7d7d7d;
+                            padding: rem(10);
+                            border-radius: rem(4);
+                            color: #fff;
+                            font-size: rem(14);
+                            line-height: rem(20);
+                            img{
+                                width: rem(300);
+                                height: auto;
+                            }
+                        }
+                    }
+                    .service{
+                        width: 100%;
+                        margin-bottom: rem(10);
+                        .service-title{
+                            width: rem(80);
+                            height: rem(50);
+                            float:right;
+                            .title-img{
+                                text-align: right;
+                                img{
+                                    width: rem(20);
+                                    height: rem(20);
+                                }
+                            }
+                            .title-text{
+                                font-size: rem(14);
+                                color: #fff;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                text-align: right;
+                            }
+                        }
+                        .service-cont{
+                            float: left;
+                            width: 82%;
+                            background: #7d7d7d;
+                            padding: rem(10);
+                            border-radius: rem(4);
+                            color: #fff;
+                            font-size: rem(14);
+                            line-height: rem(20);
+                            img{
+                                width: rem(300);
+                                height: auto;
+                            }
+                        }
+                    }
+                    .service-reply{
+                        display: none;
+                        &.active{
+                            display: block;
+                        }
+                        width: 100%;
+                        margin-bottom: rem(10);
+                        .service-title{
+                            width: rem(80);
+                            height: rem(50);
+                            float:right;
+                            .title-img{
+                                text-align: right;
+                                img{
+                                    width: rem(20);
+                                    height: rem(20);
+                                }
+                            }
+                            .title-text{
+                                font-size: rem(14);
+                                color: #fff;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                text-align: right;
+                            }
+                        }
+                        .service-cont{
+                            float: left;
+                            width: 82%;
+                            background: #7d7d7d;
+                            padding: rem(10);
+                            border-radius: rem(4);
+                            color: #fff;
+                            font-size: rem(14);
+                            line-height: rem(20);
+                            img{
+                                width: rem(300);
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+                .qa-btn{
+                    position: relative;
+                    width: 100%;
+                    height:rem(60);
+                    padding:rem(10) 0 ;
+                    margin-top: rem(20);
+                    border-top: 1px #777575 solid;
+                    p{
+                        text-align: center;
+                        font-size: rem(16);
+                        color: #fff;
+                    }
+                    .no{
+                        position: absolute;
+                        left: rem(140);
+                        top: rem(40);
+                        width: rem(130);
+                        height: rem(40);
+                        background: #3c9783;
+                        border-radius: rem(4);
+                        img{
+                            position: absolute;
+                            left: rem(25);
+                            top:rem(10);
+                            width: rem(20);
+                            height: rem(20);
+                        }
+                        font{
+                            position: absolute;
+                            left: rem(50);
+                            top: rem(3);
+                            display: block;
+                            font-size: rem(12);
+                            color: #fff;
+                            text-align: center;
+                        }
+                    }
+                    .yes{
+                        position: absolute;
+                        right: rem(130);
+                        top: rem(40);
+                        width: rem(140);
+                        height: rem(40);
+                        background: #3c9783;
+                        border-radius: rem(4);
+                        img{
+                            position: absolute;
+                            left: rem(25);
+                            top:rem(10);
+                            width: rem(20);
+                            height: rem(20);
+                        }
+                        font{
+                            position: absolute;
+                            left: rem(50);
+                            top: rem(3);
+                            display: block;
+                            font-size: rem(12);
+                            color: #fff;
+                            text-align: center;
+                        }
+                    }
+                }
+
+            }
+       }
+    }
+}

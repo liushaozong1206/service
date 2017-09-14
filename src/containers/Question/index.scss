@@ -1,0 +1,171 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/10
+ * Description：enter scss
+ */
+
+@import "../../../libs/scss/normalize";
+@import "../../../libs/scss/public";
+@import "../../../libs/scss/rem";
+
+.enter{
+    position: relative;
+    width: rem(640);
+    height: auto;
+    background:#202020;
+    padding-bottom: rem(20);
+    .enter-box{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: rem(10);
+        box-sizing: border-box;
+        .close{
+            position: absolute;
+            width: rem(21);
+            height: rem(21);
+            right: rem(15);
+            background: url("./img/close.png") no-repeat;
+            background-size: 100%;
+            top: rem(30);
+        }
+        .back{
+            position: absolute;
+            top: rem(25);
+            img{
+                width: rem(30);
+                height: rem(30);
+            }
+        }
+        h5{
+            position: relative;
+            font-size: rem(20);
+            color: #fff;
+            text-align: center;
+            width: rem(180);
+            left:rem(220);
+            line-height: rem(60);
+            span{
+                position: absolute;
+                left: rem(15);
+                top: rem(20);
+                width: rem(30);
+                height: rem(21);
+                background: url("./img/title-bg.png") no-repeat;
+                background-size: 100%;
+            }
+        }
+        .enter-btn{
+            width: 100%;
+            position: relative;
+            height: rem(50);
+            border: 1px #2d2d2d solid;
+            border-radius: rem(4);
+            box-sizing: border-box;
+            .my-question{
+                position: absolute;
+                width: rem(120);
+                height: rem(35);
+                left: rem(150);
+                top: rem(7);
+                line-height: rem(35);
+                background: #00a7dc;
+                border-radius: rem(4);
+                font-size: rem(18);
+                color: #fff;
+                text-align: center;
+            }
+            .query{
+                position: absolute;
+                width: rem(120);
+                height: rem(35);
+                right: rem(150);
+                top: rem(7);
+                line-height: rem(35);
+                background: #00a7dc;
+                border-radius: rem(4);
+                font-size: rem(18);
+                color: #fff;
+                text-align: center;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        h6{
+            position: relative;
+            font-size: rem(18);
+            text-align: center;
+            color: #fff;
+            line-height: rem(50);
+        }
+        .question-box{
+            width: 100%;
+            border: 1px #2d2d2d solid;
+            border-radius: rem(4);
+            box-sizing: border-box;
+            .list-box{
+                width: 97%;
+                height: 90%;
+                margin: 1.5% auto;
+                padding:0 rem(20);
+                border-radius: rem(4);
+                background: #474747;
+                .list{
+                    p{
+                        position: relative;
+                        font-size: rem(16);
+                        color: #fff;
+                        border-bottom: 1px #595859 solid;
+                        height: rem(45);
+                        line-height: rem(45);
+                        span{
+                            position: absolute;
+                            top: rem(3);
+                            height: rem(30);
+                            right: rem(0);
+                            color: #959495;
+                            img{
+                                width: rem(20);
+                                height: rem(20);
+                            }
+                        }
+                        em{
+                            display: block;
+                            float: left;
+                            width: 93%;
+                            margin-left: rem(5);
+                            height: rem(45);
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                        font{
+                            display: block;
+                            float: left;
+                            color: #787778;
+                        }
+                    }
+                    p:last-child{
+                        border: none;
+                    }
+                    .list-cont{
+                        display: none;
+                        width: 96%;
+                        height: auto;
+                        margin: 0 auto;
+                        color: #b3afb3;
+                        font-size: rem(16);
+                        padding: rem(6) 0;
+                        border-bottom: 1px #5a5959 dashed;
+                        line-height: rem(25);
+                        &.active{
+                            display: block;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

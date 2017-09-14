@@ -1,0 +1,158 @@
+/**
+ * Author：zhoushuanglong
+ * Time：2017/8/10
+ * Description：enter scss
+ */
+
+@import "../../../libs/scss/normalize";
+@import "../../../libs/scss/public";
+@import "../../../libs/scss/rem";
+
+.enter{
+    position: relative;
+    width: rem(640);
+    height: auto;
+    background:#202020;
+    padding-bottom: rem(20);
+    .enter-box{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: rem(10);
+        background:#202020;
+        box-sizing: border-box;
+        .close{
+            position: absolute;
+            width: rem(24);
+            height: rem(24);
+            right: rem(15);
+            background: url("./img/close.png") #3f4041 no-repeat;
+            border-radius: 100%;
+            background-size: 100%;
+            top: rem(30);
+        }
+        .back{
+            position: absolute;
+            top: rem(25);
+            img{
+                width: rem(30);
+                height: rem(30);
+            }
+        }
+        h5{
+            position: relative;
+            font-size: rem(20);
+            color: #fff;
+            text-align: center;
+            width: rem(180);
+            left:rem(220);
+            line-height: rem(60);
+            span{
+                position: absolute;
+                left: rem(15);
+                top: rem(20);
+                width: rem(30);
+                height: rem(21);
+                background: url("./img/title-bg.png") no-repeat;
+                background-size: 100%;
+            }
+        }
+        .enter-btn{
+            width: 100%;
+            position: relative;
+            height: rem(50);
+            border: 1px #2d2d2d solid;
+            border-radius: rem(4);
+            box-sizing: border-box;
+            .my-question{
+                position: absolute;
+                width: rem(120);
+                height: rem(35);
+                left: rem(150);
+                top: rem(7);
+                line-height: rem(35);
+                background: #00a7dc;
+                border-radius: rem(4);
+                font-size: rem(18);
+                color: #fff;
+                text-align: center;
+                span{
+                    &.active{
+                        display: none;
+                    }
+                    display: none;
+                    position: absolute;
+                    right: rem(10);
+                    top: rem(15);
+                    width: rem(6);
+                    height: rem(6);
+                    background: #ff0000;
+                    border-radius: 100%;
+                }
+            }
+            .query{
+                position: absolute;
+                width: rem(120);
+                height: rem(35);
+                right: rem(150);
+                top: rem(7);
+                line-height: rem(35);
+                background: #00a7dc;
+                border-radius: rem(4);
+                font-size: rem(18);
+                color: #fff;
+                text-align: center;
+            }
+        }
+        h6{
+            position: relative;
+            font-size: rem(18);
+            text-align: center;
+            color: #fff;
+            line-height: rem(50);
+        }
+        .question-box{
+            width: 100%;
+            border: 1px #2d2d2d solid;
+            border-radius: rem(4);
+            box-sizing: border-box;
+            padding-bottom: rem(10);
+            ul{
+                width: 97%;
+                height: 90%;
+                margin: 0 auto;
+                margin-top: 1.5%;
+                border-radius: rem(4);
+                background: #474747;
+                li{
+                    position: relative;
+                    font-size: rem(16);
+                    color: #fff;
+                    line-height: rem(60);
+                    border-bottom: 1px #595859 solid;
+                    padding-left: rem(20);
+                    a{
+                        display: block;
+                        width: 100%;
+                        color: #fff;
+                        span{
+                            position: absolute;
+                            height: rem(30);
+                            top: rem(8);
+                            right: rem(20);
+                            color: #959495;
+                            img{
+                                width: rem(30);
+                                height: rem(30);
+                            }
+                        }
+                    }
+
+                }
+                li:last-child{
+                    border: none;
+                }
+            }
+        }
+    }
+}
